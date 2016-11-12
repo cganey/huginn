@@ -45,7 +45,7 @@ module Agents
             "url": { "css": "#comic img", "value": "@src" },
             "title": { "css": "#comic img", "value": "@title" },
             "body_text": { "css": "div.main", "value": "string(.)" },
-            "page_title": { "css": "title", "value": "string(.)" }
+            "page_title": { "css": "title", "value": "string(.)", "repeat": true }
           }
 
       "@_attr_" is the XPath expression to extract the value of an attribute named _attr_ from a node, and `string(.)` gives a string with all the enclosed text nodes concatenated without entity escaping (such as `&amp;`). To extract the innerHTML, use `./node()`; and to extract the outer HTML, use `.`.
